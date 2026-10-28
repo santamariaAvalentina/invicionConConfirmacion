@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#28251f">
+    <meta name="description" content="Lucía y Juan se casan. Acompañalos a celebrar este día tan especial.">
+
+    <title>Lucía &amp; Juan | Nos casamos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="portada" id="portada" aria-label="Portada de la invitación">
+            <div class="portada__texto">
+                <button class="portada__boton" id="abrirInvitacion" type="button" aria-label="Abrir invitación">
+                    <svg class="portada__corazon" viewBox="0 0 100 90" aria-hidden="true" focusable="false">
+                        <path d="M50 84
+                               C42 76 7 52 7 28
+                               C7 13 18 5 31 5
+                               C40 5 47 11 50 19
+                               C53 11 60 5 69 5
+                               C82 5 93 13 93 28
+                               C93 52 58 76 50 84 Z" />
+                    </svg>
+
+                    <span class="portada__boton-texto">CLICK</span>
+                </button>
+                <p class="portada__etiqueta">UNA HISTORIA DE AMOR</p>
+
+                <h1 class="portada__nombres">
+                    Lucía <span>&amp;</span> Juan
+                </h1>
+
+                <p class="portada__titulo">NOS CASAMOS</p>
+                <p class="portada__fecha">25 · 10 · 2027</p>
+
+
+            </div>
+
+            <div class="portada__puertas" id="puertas" aria-hidden="true">
+                <div class="portada__mitad portada__mitad--izquierda"></div>
+                <div class="portada__mitad portada__mitad--derecha"></div>
+            </div>
+        </section>
+
+        <section class="interior" id="interior" aria-hidden="true" inert>
+            <button class="interior__volver" id="volverPortada" type="button" aria-label="Volver a la portada">
+                &#8592;
+            </button>
+            <div class="interior__velo"></div>
+
+            <div class="interior__contenido">
+                <p class="interior__sobrelinea">EL COMIENZO DE SIEMPRE</p>
+
+                <h2 class="interior__nombres">
+                    Lucía <span>&amp;</span> Juan
+                </h2>
+
+                <div class="ornamento" aria-hidden="true">
+                    <span></span> ♥ <span></span>
+                </div>
+
+                <p class="interior__mensaje">
+                    Hay momentos que se vuelven inolvidables
+                    cuando los compartimos con las personas que amamos.
+                    ¡Nos encantaría celebrar con vos!
+                </p>
+
+                <div class="interior__seccion">
+                    <p class="interior__sobrelinea">RESERVÁ LA FECHA</p>
+                    <p class="interior__fecha">25 de octubre de 2027</p>
+                    <p class="interior__hora">20:00 horas</p>
+                </div>
+
+                <div class="interior__seccion interior__cuenta">
+                    <p class="interior__sobrelinea">LA CUENTA REGRESIVA</p>
+
+                    <div class="contador" id="contador" aria-label="Cuenta regresiva">
+                        <div class="contador__unidad">
+                            <span id="dias">00</span>
+                            <small>DÍAS</small>
+                        </div>
+
+                        <div class="contador__unidad">
+                            <span id="horas">00</span>
+                            <small>HORAS</small>
+                        </div>
+
+                        <div class="contador__unidad">
+                            <span id="minutos">00</span>
+                            <small>MINUTOS</small>
+                        </div>
+
+                        <div class="contador__unidad">
+                            <span id="segundos">00</span>
+                            <small>SEGUNDOS</small>
+                        </div>
+                    </div>
+
+                    <p class="contador__mensaje" id="mensajeContador" aria-live="polite"></p>
+                </div>
+
+                <div class="interior__seccion interior__lugar">
+                    <p class="interior__sobrelinea">NOS ENCONTRAMOS EN</p>
+
+                    <h3>Sauron Adventure &amp; Homes</h3>
+
+                    <p class="interior__texto">
+                        Queremos compartir este día especial con vos.
+                    </p>
+
+                    <a class="boton boton--ubicacion"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Sauron+Adventure+%26+Homes"
+                        target="_blank" rel="noopener noreferrer">
+                        VER UBICACIÓN
+                    </a>
+                </div>
+
+                <div class="interior__seccion interior__confirmacion">
+                    <div class="ornamento" aria-hidden="true">
+                        <span></span> ♥ <span></span>
+                    </div>
+
+                    <h3>¿Nos acompañás?</h3>
+
+                    <p class="interior__texto">
+                        Confirmá tu asistencia. ¡Nos va a encantar verte!
+                    </p>
+
+                    <a class="boton boton--whatsapp" id="confirmarWhatsApp" href="https://wa.me/5493512290218"
+                        target="_blank" rel="noopener noreferrer">
+                        CONFIRMAR POR WHATSAPP
+                    </a>
+                </div>
+
+                <footer class="interior__cierre">
+                    <p>Con amor,</p>
+                    <span>Lucía &amp; Juan</span>
+                    <small>Tu Galaxia Digital</small>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
